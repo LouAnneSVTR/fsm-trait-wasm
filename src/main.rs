@@ -7,16 +7,16 @@ fn main() {
     let name2 = 1;
     let name3 = 2;
 
-    test.addNode(name);
-    test.addNode(name2);
-    test.addNode(name3);
+    test.add_node(name);
+    test.add_node(name2);
+    test.add_node(name3);
 
-    test.addTransition('a',0,1);
-    test.addTransition('b',0,2);
-    test.addTransition('c',1,2);
-    test.addTransition('d',2,2);
+    test.add_transition('a',0,1);
+    test.add_transition('b',0,2);
+    test.add_transition('c',1,2);
+    test.add_transition('d',2,2);
 
-    test.displayFSM();
+    test.display_fsm();
 
     let word1 = "acd";
     let mut result = test.process_fsm(0,word1);
